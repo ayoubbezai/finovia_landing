@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <header className="fixed top-0 w-full z-50 User/95 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
@@ -39,7 +39,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="md:hidden User border-t border-gray-100">
           <div className="px-4 py-4 space-y-3">
             <a href="#features" className="block py-2 text-sm font-medium text-gray-600 hover:text-gray-900">Features</a>
             <a href="#how-it-works" className="block py-2 text-sm font-medium text-gray-600 hover:text-gray-900">How It Works</a>

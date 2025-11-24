@@ -62,19 +62,19 @@ export default function Home() {
   const NavBar = () => (
     <>
       <div
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        className={` top-0 w-full z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-xs py-3 border-b border-gray-100"
-            : "bg-transparent py-4"
+            : "bg-transparent py-4 bg-white/95 "
         }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo Section */}
           <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-violet-600 rounded-lg flex items-center justify-center">
               <Smartphone className="w-5 h-5 text-white" />
             </div>
-            <h1 className="text-xl font-semibold bg-gradient-to-br from-emerald-500 via-teal-600 to-teal-700 bg-clip-text text-transparent">
+            <h1 className="text-xl font-semibold bg-gradient-to-br from-purple-500 via-violet-600 to-violet-700 bg-clip-text text-transparent">
               Pocket AI
             </h1>
           </div>
@@ -133,7 +133,7 @@ export default function Home() {
             <button className="h-9 px-4 text-sm font-medium text-gray-700 border border-gray-300 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors">
               Sign In
             </button>
-            <button className="h-9 px-4 text-sm font-medium bg-gradient-to-br from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white shadow-sm hover:shadow-md transition-all rounded-md">
+            <button className="h-9 px-4 text-sm font-medium bg-gradient-to-br from-purple-500 to-violet-600 hover:from-purple-600 hover:to-violet-700 text-white shadow-sm hover:shadow-md transition-all rounded-md">
               Get Demo
             </button>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
               <button className="w-full h-9 text-sm font-medium text-gray-700 border border-gray-300 rounded-md hover:bg-gray-50">
                 Sign In
               </button>
-              <button className="w-full h-9 text-sm font-medium bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-md">
+              <button className="w-full h-9 text-sm font-medium bg-gradient-to-br from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white rounded-md">
                 Get Demo
               </button>
             </div>
@@ -220,15 +220,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hidden sm:block absolute bottom-20 sm:bottom-40 right-2 sm:right-16 w-24 h-24 sm:w-28 sm:h-28 bg-blue-100 bg-opacity-50 shadow-lg rounded-md transform -rotate-3 animate-float-medium flex items-center justify-center p-2 border border-blue-200 z-0">
-          <div className="text-blue-700 text-xs font-medium text-center">
+        <div className="hidden sm:block absolute bottom-20 sm:bottom-40 right-2 sm:right-16 w-24 h-24 sm:w-28 sm:h-28 bg-purple-100 bg-opacity-50 shadow-lg rounded-md transform -rotate-3 animate-float-medium flex items-center justify-center p-2 border border-purple-200 z-0">
+          <div className="text-purple-700 text-xs font-medium text-center">
             <Mic className="w-3 h-3 sm:w-4 sm:h-4 mx-auto mb-1" />
             <p className="text-[10px] sm:text-xs">Voice commands in Darja & Arabic</p>
           </div>
         </div>
 
-        <div className="hidden sm:block absolute top-1/3 sm:top-1/2 left-2 sm:left-20 w-20 h-20 sm:w-24 sm:h-24 bg-green-100 bg-opacity-50 shadow-lg rounded-md transform rotate-3 animate-float-fast flex items-center justify-center p-2 border border-green-200 z-0">
-          <div className="text-green-700 text-xs font-medium text-center">
+        <div className="hidden sm:block absolute top-1/3 sm:top-1/2 left-2 sm:left-20 w-20 h-20 sm:w-24 sm:h-24 bg-violet-100 bg-opacity-50 shadow-lg rounded-md transform rotate-3 animate-float-fast flex items-center justify-center p-2 border border-violet-200 z-0">
+          <div className="text-violet-700 text-xs font-medium text-center">
             <Brain className="w-3 h-3 sm:w-4 sm:h-4 mx-auto mb-1" />
             <p className="text-[10px] sm:text-xs">AI-powered insights</p>
           </div>
@@ -242,14 +242,14 @@ export default function Home() {
               <p>OCR Scanning</p>
             </div>
           </div>
-          <div className="w-20 h-20 bg-blue-100 bg-opacity-50 shadow-lg rounded-md flex items-center justify-center p-1 border border-blue-200 -rotate-3">
-            <div className="text-blue-700 text-[10px] font-medium text-center">
+          <div className="w-20 h-20 bg-purple-100 bg-opacity-50 shadow-lg rounded-md flex items-center justify-center p-1 border border-purple-200 -rotate-3">
+            <div className="text-purple-700 text-[10px] font-medium text-center">
               <Mic className="w-3 h-3 mx-auto mb-1" />
               <p>Voice Input</p>
             </div>
           </div>
-          <div className="w-20 h-20 bg-green-100 bg-opacity-50 shadow-lg rounded-md flex items-center justify-center p-1 border border-green-200 -rotate-12">
-            <div className="text-green-700 text-[10px] font-medium text-center">
+          <div className="w-20 h-20 bg-violet-100 bg-opacity-50 shadow-lg rounded-md flex items-center justify-center p-1 border border-violet-200 -rotate-12">
+            <div className="text-violet-700 text-[10px] font-medium text-center">
               <Brain className="w-3 h-3 mx-auto mb-1" />
               <p>AI Insights</p>
             </div>
@@ -258,12 +258,12 @@ export default function Home() {
 
         <div className="relative z-10 flex flex-col items-center gap-6 w-full mx-auto max-w-4xl">
           {/* Enhanced Badge */}
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-4 animate-fadeIn border border-blue-200 shadow-sm">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-50 to-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium mb-4 animate-fadeIn border border-purple-200 shadow-sm">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  className="w-3 h-3 sm:w-4 sm:h-4 fill-blue-400 text-blue-400"
+                  className="w-3 h-3 sm:w-4 sm:h-4 fill-purple-400 text-purple-400"
                 />
               ))}
             </div>
@@ -273,7 +273,7 @@ export default function Home() {
           {/* Enhanced Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight max-w-3xl">
             Your Personal{" "}
-            <span className="text-blue-600 relative inline-block">
+            <span className="text-purple-600 relative inline-block">
               Finance Assistant
               <svg
                 className="absolute -bottom-2 left-0 w-full"
@@ -301,15 +301,15 @@ export default function Home() {
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mt-4">
             <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500 bg-white bg-opacity-70 px-3 py-1.5 rounded-full border border-gray-200">
-              <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" />
+              <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-purple-500" />
               <span className="font-semibold text-gray-700">85%</span> faster expense tracking
             </div>
             <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500 bg-white bg-opacity-70 px-3 py-1.5 rounded-full border border-gray-200">
-              <Users className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" />
+              <Users className="w-3 h-3 sm:w-4 sm:h-4 text-purple-500" />
               <span className="font-semibold text-gray-700">2.5x</span> better savings
             </div>
             <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-500 bg-white bg-opacity-70 px-3 py-1.5 rounded-full border border-gray-200">
-              <FileText className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" />
+              <FileText className="w-3 h-3 sm:w-4 sm:h-4 text-purple-500" />
               <span className="font-semibold text-gray-700">60%</span> less manual work
             </div>
           </div>
@@ -319,12 +319,12 @@ export default function Home() {
             <div className="relative inline-block group">
               <button
                 onClick={scrollToDashboard}
-                className="relative bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-medium transition-all duration-300 transform group-hover:-translate-y-1 group-hover:shadow-xl shadow-lg flex items-center gap-2"
+                className="relative bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-medium transition-all duration-300 transform group-hover:-translate-y-1 group-hover:shadow-xl shadow-lg flex items-center gap-2"
               >
                 <span className="relative z-10 text-sm sm:text-base">Download Free</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:translate-x-1" />
               </button>
-              <span className="absolute -top-2 -right-2 text-[10px] font-semibold tracking-wide text-white px-2 py-0.5 rounded-md bg-gradient-to-r from-green-400 to-green-500 shadow-md transition-all duration-300 transform group-hover:-translate-y-1 group-hover:scale-105">
+              <span className="absolute -top-2 -right-2 text-[10px] font-semibold tracking-wide text-white px-2 py-0.5 rounded-md bg-gradient-to-r from-fuchsia-400 to-fuchsia-500 shadow-md transition-all duration-300 transform group-hover:-translate-y-1 group-hover:scale-105">
                 FREE
               </span>
             </div>
@@ -348,8 +348,8 @@ export default function Home() {
           {/* Left Side */}
           <div className="w-full lg:w-2/5 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-blue-200 shadow-sm">
-              <Sparkles className="w-4 h-4 text-blue-600" />
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-200 shadow-sm">
+              <Sparkles className="w-4 h-4 text-purple-600" />
               <span className="font-medium">AI-Powered Finance</span>
             </div>
 
@@ -357,12 +357,12 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-5 leading-tight md:leading-snug relative">
               Smart{" "}
               <span className="relative inline-block">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-600 to-cyan-500 relative">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-600 to-pink-500 relative">
                   Money Management
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shine_3s_linear_infinite]" />
                 </span>
                 {/* Underline */}
-                <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-400 rounded-full overflow-hidden">
+                <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-purple-500 via-purple-400 to-pink-400 rounded-full overflow-hidden">
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/80 to-transparent animate-[scan_2.5s_linear_infinite]" />
                 </span>
               </span>{" "}
@@ -379,7 +379,7 @@ export default function Home() {
           {/* Right Side - Dashboard Image */}
           <div className="w-full lg:w-3/5 relative rounded-xl md:rounded-2xl overflow-hidden shadow-lg md:shadow-2xl border border-gray-200 bg-white/90 backdrop-blur-md">
             {/* Decorative gradient glow */}
-            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-emerald-400/20 blur-lg -z-10" />
+            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-purple-500/20 via-pink-400/20 to-purple-400/20 blur-lg -z-10" />
 
             {/* Sleek Browser Header */}
             <div className="bg-gray-50/95 backdrop-blur-sm p-2 md:p-3 flex items-center gap-1 md:gap-2 border-b border-gray-200">
@@ -387,7 +387,7 @@ export default function Home() {
               <div className="flex gap-1 md:gap-1.5 mr-2 md:mr-3">
                 <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-red-500"></div>
                 <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-amber-400"></div>
-                <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-emerald-500"></div>
+                <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-purple-500"></div>
               </div>
 
               {/* Search / URL Bar */}
@@ -395,12 +395,12 @@ export default function Home() {
                 <div className="flex items-center truncate">
                   <Shield
                     size={isMobile ? 12 : 14}
-                    className="mr-1 md:mr-1.5 text-green-600 flex-shrink-0"
+                    className="mr-1 md:mr-1.5 text-violet-600 flex-shrink-0"
                   />
                   <span className="truncate">app.pocketai.dz/dashboard</span>
                 </div>
                 <div className="flex items-center gap-2 md:gap-3 ml-2">
-                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-green-400 animate-pulse flex-shrink-0"></div>
+                  <div className="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-fuchsia-400 animate-pulse flex-shrink-0"></div>
                   <span className="text-xs text-gray-500 hidden xs:inline-block">
                     Secure
                   </span>
@@ -416,15 +416,15 @@ export default function Home() {
                   <Settings size={isMobile ? 14 : 16} className="text-gray-500" />
                 </button>
                 <div className="w-6 h-6 md:w-7 md:h-7 rounded-full overflow-hidden shadow-sm ring-1 ring-gray-300 bg-white flex items-center justify-center flex-shrink-0">
-                  <Smartphone className="text-blue-600" size={isMobile ? 16 : 20} />
+                  <Smartphone className="text-purple-600" size={isMobile ? 16 : 20} />
                 </div>
               </div>
             </div>
 
             {/* Dashboard Content */}
-            <div className="min-h-[280px] sm:min-h-[350px] md:min-h-[420px] flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50">
+            <div className="min-h-[280px] sm:min-h-[350px] md:min-h-[420px] flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50">
               <div className="text-center p-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Smartphone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Pocket AI Dashboard</h3>
@@ -444,7 +444,7 @@ export default function Home() {
         icon: Camera,
         title: "Instant Tracking",
         description: "Snap a receipt or speak to log expenses in real time, perfect for cash transactions common in Algeria.",
-        color: "from-blue-500 to-cyan-500"
+        color: "from-purple-500 to-pink-500"
       },
       {
         icon: Brain,
@@ -456,7 +456,7 @@ export default function Home() {
         icon: Languages,
         title: "Locally Designed",
         description: "Built around Algerian habits with a safe, simple experience in Darja, Arabic, and French.",
-        color: "from-green-500 to-emerald-500"
+        color: "from-fuchsia-500 to-purple-500"
       },
       {
         icon: MessageCircle,
@@ -468,7 +468,7 @@ export default function Home() {
         icon: Mic,
         title: "Voice Input",
         description: "Use voice commands in your preferred language to quickly log expenses and get insights.",
-        color: "from-indigo-500 to-blue-500"
+        color: "from-indigo-500 to-purple-500"
       },
       {
         icon: Shield,
@@ -479,13 +479,13 @@ export default function Home() {
     ];
 
     return (
-      <section id="features" className="py-20 bg-white">
+      <section id="features" className="py-20 bg-transparent">
         <div className="container mx-auto px-6">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Powerful Features for
-              <span className="text-transparent bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text">
+              <span className="text-transparent bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text">
                 {" "}Smart Finance
               </span>
             </h2>
@@ -499,7 +499,7 @@ export default function Home() {
             {features.map((feature, index) => (
               <div 
                 key={index}
-                className="group relative bg-white rounded-2xl p-8 border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all duration-300"
+                className="group relative bg-white rounded-2xl p-8 border border-gray-100 hover:border-purple-200 hover:shadow-xl transition-all duration-300"
               >
                 {/* Icon */}
                 <div className={`w-14 h-14 bg-gradient-to-r ${feature.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -515,7 +515,7 @@ export default function Home() {
                 </p>
                 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500 to-purple-600 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
               </div>
             ))}
           </div>
@@ -526,9 +526,9 @@ export default function Home() {
 
   // Download Component
   const Download = () => (
-    <section id="download" className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <section id="download" className="py-20 bg-transparent">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-8 md:p-12 text-white">
+        <div className="max-w-6xl mx-auto bg-gradient-to-br from-purple-500 to-purple-600 rounded-3xl p-8 md:p-12 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
@@ -538,7 +538,7 @@ export default function Home() {
                   <br />
                   Your Finances?
                 </h2>
-                <p className="text-xl text-blue-100 leading-relaxed">
+                <p className="text-xl text-purple-100 leading-relaxed">
                   Join thousands of Algerians who are taking control of their money with Pocket AI. 
                   Download now and start your journey to financial wisdom.
                 </p>
@@ -548,15 +548,15 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold">4.8/5</div>
-                  <div className="text-blue-200 text-sm">Rating</div>
+                  <div className="text-purple-200 text-sm">Rating</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold">50K+</div>
-                  <div className="text-blue-200 text-sm">Downloads</div>
+                  <div className="text-purple-200 text-sm">Downloads</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold">99%</div>
-                  <div className="text-blue-200 text-sm">Satisfaction</div>
+                  <div className="text-purple-200 text-sm">Satisfaction</div>
                 </div>
               </div>
 
@@ -608,7 +608,7 @@ export default function Home() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <Smartphone className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold">Pocket AI</span>
@@ -669,18 +669,18 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen scrollbar-custom overflow-y-auto bg-white overflow-x-hidden relative">
-      {/* Background that covers entire page */}
-      <div className="absolute z-0 inset-0 overflow-hidden w-full">
+    <div className="min-h-screen scrollbar-custom overflow-y-auto overflow-x-hidden relative">
+  {/* Background that covers entire page (overlayed above section backgrounds but under textual content/cards) */}
+  <div className="fixed inset-0 w-full h-full pointer-events-none z-10">
         <div
-          className="fixed inset-0"
+          className="absolute inset-0 w-full h-full pointer-events-none"
           style={{
             backgroundImage: `
-              linear-gradient(to bottom, rgba(147,197,253,0.22) 0%, transparent 50%, rgba(147,197,253,0.22) 100%),
-              radial-gradient(circle at 15% 50%, rgba(59,130,246,0.10) 0%, transparent 25%),
-              radial-gradient(circle at 85% 30%, rgba(59,130,246,0.08) 0%, transparent 25%),
-              linear-gradient(to right, rgba(191,219,254,0.65) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(191,219,254,0.65) 1px, transparent 1px)
+              linear-gradient(to bottom, rgba(147,51,234,0.15) 0%, transparent 70%, rgba(147,51,234,0.15) 100%),
+              radial-gradient(circle at 15% 50%, rgba(192,132,252,0.08) 0%, transparent 15%),
+              radial-gradient(circle at 85% 30%, rgba(109,40,217,0.06) 0%, transparent 15%),
+              linear-gradient(to right, rgba(168,85,247,0.4) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(168,85,247,0.4) 1px, transparent 1px)
             `,
             backgroundSize: `
               100% 100vh,
@@ -693,15 +693,15 @@ export default function Home() {
           }}
         ></div>
         {/* Animated gradient overlay - covers entire page */}
-        <div className="absolute inset-0 opacity-25 mix-blend-soft-light">
+        <div className="absolute inset-0 opacity-25 mix-blend-soft-light pointer-events-none">
           {/* Top fade */}
-          <div className="absolute top-0 left-0 w-full h-1/12 bg-gradient-to-b from-emerald-400/20 to-transparent"></div>
+          <div className="absolute top-0 left-0 w-full h-1/12 bg-gradient-to-b from-purple-400/20 to-transparent"></div>
 
           {/* Transparent middle  */}
           <div className="absolute top-1/3 left-0 w-full h-5/6 bg-transparent"></div>
 
           {/* Bottom fade */}
-          <div className="absolute bottom-0 left-0 w-full h-1/12 bg-gradient-to-t from-emerald-400/20 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full h-1/12 bg-gradient-to-t from-purple-400/20 to-transparent"></div>
         </div>
       </div>
 
@@ -710,11 +710,13 @@ export default function Home() {
         <NavBar />
       </div>
 
-      <Hero />
-      <Dashboard />
-      <Features />
-      <Download />
-      <Footer />
+  <div className="relative z-20">
+        <Hero />
+        <Dashboard />
+        <Features />
+        <Download />
+        <Footer />
+      </div>
 
       {/* Animations */}
       <style jsx>{`
