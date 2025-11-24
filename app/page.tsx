@@ -211,7 +211,7 @@ export default function Home() {
   // Hero Component
   const Hero = () => (
     <>
-      <div className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden text-center px-4 mt-16 md:mt-6 z-10">
+      <div className="relative w-full min-h-[90vh] flex flex-col items-center justify-center overflow-hidden text-center px-4 mt-16 md:mt-6 z-10">
         {/* Sticky note elements */}
         <div className="hidden sm:block absolute top-10 sm:top-20 left-2 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 bg-yellow-100 bg-opacity-50 shadow-lg rounded-md transform rotate-6 animate-float-slow flex items-center justify-center p-2 border border-yellow-200 z-0">
           <div className="text-yellow-700 text-xs font-medium text-center">
