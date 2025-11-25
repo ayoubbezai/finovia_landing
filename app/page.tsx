@@ -16,10 +16,6 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const dashboardRef = useRef<HTMLDivElement>(null);
 
-  const scrollToDashboard = () => {
-    dashboardRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   useEffect(() => {
     const timer = setTimeout(() => setShowWireframe(false), 2500);
     const arrowTimer = setTimeout(() => setArrowDrawn(true), 800);
@@ -317,13 +313,14 @@ export default function Home() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <div className="relative inline-block group">
-              <button
-                onClick={scrollToDashboard}
+              <a
+                href="/apk/app-arm64-v8a-release.apk"
+                download
                 className="relative bg-green-600 hover:bg-green-700 text-white px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-medium transition-all duration-300 transform group-hover:-translate-y-1 group-hover:shadow-xl shadow-lg flex items-center gap-2"
               >
                 <span className="relative z-10 text-sm sm:text-base">Download Free</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover:translate-x-1" />
-              </button>
+              </a>
               <span className="absolute -top-2 -right-2 text-[10px] font-semibold tracking-wide text-white px-2 py-0.5 rounded-md bg-gradient-to-r from-emerald-400 to-emerald-500 shadow-md transition-all duration-300 transform group-hover:-translate-y-1 group-hover:scale-105">
                 FREE
               </span>
